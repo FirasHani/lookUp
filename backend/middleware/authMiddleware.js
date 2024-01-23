@@ -59,7 +59,7 @@ const protectAdmin = asyncHandler(async (req, res, next) => {
         user = await User.findById(decoded.id).select('-password')
       }
       else{
-        console.log('dad')
+        console.log('test')
       }
       // Get user from the token
       
